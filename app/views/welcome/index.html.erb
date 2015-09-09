@@ -1,4 +1,4 @@
-<%= render partial: "partials/nav" %>
+
 <header class="intro">
   <div class="intro-body">
     <div class="container">
@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
           <h1 class="brand-heading">InstaPic</h1>
           <p class="intro-text">An instagram clone<br></p>
-          <%  if current_user %>
+          <%  if current_user.nil? %>
           <div class="btn btn-circle page-scroll">
           <%= link_to "", "#login", class:  "fa fa-instagram"%>
           <div>
@@ -16,7 +16,7 @@
     </div>
   </div>
 </header>
-
+<% if current_user.nil? %>
 <section id="login" class="container content-section text-center">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
@@ -25,7 +25,7 @@
     </div>
   </div>
 </section>
-
+<% end %>
 <div class="container text-center">
   <footer id="contact" class="container content-section text-center">
     <div class="row">
