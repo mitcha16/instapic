@@ -3,6 +3,4 @@ class InstagramController < ApplicationController
     current_client.like_media("#{params[:id]}")
     redirect_to dashboard_path
   end
-
-
 end

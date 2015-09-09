@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user, :current_client
 
   def current_user
-    current_client.user if current_client
+    @current_user ||= current_client.user if current_client
   end
 
   def current_client

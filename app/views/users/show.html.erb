@@ -4,13 +4,18 @@
     <p class="intro-text" id="welcome">Welcome back, <%= current_user.username %><br></p>
   </div>
 </header>
+
 <div class="pictures">
+  <div class="container">
+  <div class="row">
   <% current_client.user_recent_media.each do |item| %>
-  <div style='float:left;'>
-    <%= image_tag item.images.thumbnail.url%>
-    <%= link_to "Like", " /like/#{item.id}" %><br>
-    <%= link_to "Un-Like", "/media_unlike/#{item.id}" %><br>
-    Likes: <%= item.likes[:count] %>
-  </div>
+    <div class="col">
+      <%= image_tag item.images.thumbnail.url%>
+      <%= link_to "Like", " /like/#{item.id}" %><br>
+      <%= link_to "Un-Like", "/unlike/#{item.id}" %><br>
+      Likes: <%= item.likes[:count] %>
+    </div>
   <% end %>
+  </div>
+</div>
 </div>
