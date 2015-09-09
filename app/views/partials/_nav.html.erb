@@ -10,9 +10,15 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
+                <% if current_user.nil? %>
                 <li>
                     <a class="page-scroll" href="#login">Login</a>
                 </li>
+                <% else %>
+                <li>
+                    <%= link_to "Logout", logout_path %>
+                </li>
+                <% end %>
                 <li>
                     <%= link_to "Browse", "" %>
                 </li>

@@ -7,15 +7,20 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: project_development
+  database: instapic_development
+  pool: 5
+  timeout: 5000
 
 test:
   adapter: postgresql
   encoding: utf8
-  database: project_test
-
+  database: instapic_test
+  pool: 5
+  timeout: 5000
 
 production:
   adapter: postgresql
   encoding: utf8
-  database: project_production
+  database: instapic_production
+  pool: 5
+  timeout: 5000
