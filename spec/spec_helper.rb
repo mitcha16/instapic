@@ -16,7 +16,41 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'omniauth'
+OmniAuth.config.test_mode = true
+omniauth_hash = { 'provider' => 'instagram',
+  'uid' => '12345',
+  'info' => {
+    'name' => 'mitch',
+    'email' => 'hi@mitch.com',
+    'nickname' => 'mitchashby'
+  },
+  'extra' => {'raw_info' =>
+    { 'location' => 'denver',
+      'gravatar_id' => '123456789'
+    }
+  }
+}
+
+OmniAuth.config.add_mock(:instagram, omniauth_hash)
 RSpec.configure do |config|
+
+  OmniAuth.config.test_mode = true
+omniauth_hash = { 'provider' => 'github',
+                  'uid' => '12345',
+                  'info' => {
+                      'name' => 'natasha',
+                      'email' => 'hi@natashatherobot.com',
+                      'nickname' => 'NatashaTheRobot'
+                  },
+                  'extra' => {'raw_info' =>
+                                  { 'location' => 'San Francisco',
+                                    'gravatar_id' => '123456789'
+                                  }
+                  }
+}
+
+OmniAuth.config.add_mock(:github, omniauth_hash)
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
