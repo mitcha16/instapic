@@ -1,11 +1,16 @@
+
 <header class="intro dashboard">
   <div class="intro-body">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="container">
-          <p class="intro-text">Welcome back, <%= current_user.username %><br></p>
-        </div>
-      </div>
-    </div>
+    <p class="intro-text" id="welcome">Welcome back, <%= current_user.username %><br></p>
   </div>
 </header>
+<div class="pictures">
+  <% current_client.user_recent_media.each do |item| %>
+  <div style='float:left;'>
+    <%= image_tag item.images.thumbnail.url%>
+    <%= link_to "Like", " /like/#{item.id}" %><br>
+    <%= link_to "Un-Like", "/media_unlike/#{item.id}" %><br>
+    Likes: <%= item.likes[:count] %>
+  </div>
+  <% end %>
+</div>
