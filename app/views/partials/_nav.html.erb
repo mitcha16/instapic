@@ -13,10 +13,10 @@
                 </li>
                 <% else %>
                 <li>
-                <%= image_tag current_user.image , class: "nav-image" %>
+                <%= image_tag current_user.profile_picture , class: "nav-image" %>
                 </li>
                 <li >
-                  <%= link_to current_user.nickname, dashboard_path, class: "page-scroll" %></a>
+                  <%= link_to current_user.username , dashboard_path, class: "page-scroll" %></a>
                 </li>
                 <li>
                     <%= link_to "Logout", logout_path %>
