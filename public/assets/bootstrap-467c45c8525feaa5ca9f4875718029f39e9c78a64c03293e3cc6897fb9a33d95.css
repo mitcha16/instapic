@@ -1,0 +1,800 @@
+/* line 2, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+html {
+  font-family: sans-serif;
+}
+
+/* line 5, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+body {
+  margin: 0;
+  background: url("purple.jpg") no-repeat bottom center scroll;
+  background-color: black;
+}
+
+/* line 11, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 14, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 17, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 20, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 23, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.text-justify {
+  text-align: justify;
+}
+
+/* line 27, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 33, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 37, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+/* line 42, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* line 48, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.container {
+  padding-right: 8%;
+  padding-left: 8%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 55, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 62, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* line 67, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #5D0676;
+}
+
+/* line 82, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+/* line 86, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+/* line 91, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+/* line 97, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width: 768px) {
+  /* line 104, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar {
+    border-radius: 4px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 109, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-header {
+    float: left;
+  }
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+  /* line 115, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px;
+  }
+}
+/* line 121, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width: 768px) {
+  /* line 128, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    border-radius: 0;
+  }
+}
+/* line 133, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+/* line 138, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+@media (min-width: 768px) {
+  /* line 143, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  /* line 147, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-nav > li {
+    float: left;
+  }
+
+  /* line 150, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+/* line 156, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* line 160, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-btn.btn-sm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 164, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-btn.btn-xs {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 168, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 174, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-left {
+    float: left !important;
+  }
+
+  /* line 177, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+
+  /* line 181, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-right ~ .navbar-right {
+    margin-right: 0;
+  }
+}
+/* line 186, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 194, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 199, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* line 212, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 219, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+a {
+  color: #42dca3;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/* line 226, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+/* line 232, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #000;
+}
+
+/* line 240, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+/* line 244, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .navbar-brand:focus {
+  outline: 0;
+}
+
+/* line 248, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* line 254, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: 0;
+}
+
+/* line 259, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom a {
+  color: #fff;
+}
+
+/* line 263, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .nav li a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+/* line 269, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .nav li a:hover {
+  outline: 0;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+}
+
+/* line 275, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: 0;
+  background-color: transparent;
+}
+
+/* line 281, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .nav li.active {
+  outline: 0;
+}
+
+/* line 285, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 289, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.navbar-custom .nav li.active a:hover {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  /* line 294, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  /* line 304, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: #000;
+  }
+}
+/* line 311, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background: url("background.jpg") no-repeat bottom center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  -webkit-box-shadow: inset 0px -47px 24px -23px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px -47px 24px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -47px 24px -23px rgba(0, 0, 0, 0.75);
+}
+
+/* line 329, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 334, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+
+/* line 338, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  /* line 343, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+
+  /* line 348, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+
+  /* line 352, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+/* line 357, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid #5D0676;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: 0 0;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+/* line 372, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: 0;
+  color: white;
+  background: #5D0676;
+}
+
+/* line 379, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+/* line 390, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* line 400, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.btn-default {
+  border: 1px solid #5D0676;
+  color: white;
+  background-color: transparent;
+}
+
+/* line 406, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+footer {
+  padding: 50px 0;
+}
+
+/* line 410, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+footer p {
+  margin: 0;
+}
+
+/* line 414, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 418, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+footer {
+  margin-top: 40%;
+}
+
+/* line 422, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.fa-instagram {
+  font-size: 10em;
+}
+
+/* line 426, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+#login {
+  padding-top: 20%;
+}
+
+/* line 430, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.nav-image {
+  max-height: 45px;
+  border-radius: 50%;
+}
+
+/* line 435, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.dashboard {
+  background: url("purple.jpg") no-repeat bottom center scroll;
+}
+
+/* line 439, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+#welcome {
+  text-align: left;
+  margin-top: -200px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 446, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.pictures {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -450px;
+}
+
+/* line 452, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.col {
+  padding: 5px;
+  float: left;
+}
+
+/* line 457, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+#thumbnail {
+  display: inline;
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 464, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.container-feed {
+  margin: 5%;
+  margin-top: 10%;
+}
+
+/* line 469, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .modal-content {
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .9;
+  background: url("purple.jpg") no-repeat bottom center scroll;
+  overflow: scroll;
+  max-width: 70%;
+  max-height: 50%;
+  margin: 0 auto;
+}
+
+/* line 485, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em;
+}
+
+/* line 490, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .modal-content img {
+  margin-bottom: 30px;
+}
+
+/* line 494, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .modal-content .item-details {
+  margin: 30px 0;
+}
+
+/* line 498, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 508, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .close-modal:hover {
+  opacity: .3;
+}
+
+/* line 512, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .close-modal .lr {
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  background-color: #27AE60;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 523, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .close-modal .lr .rl {
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  background-color: #27AE60;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 533, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal .modal-backdrop {
+  display: none;
+  opacity: 0;
+}
+
+/* line 538, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-open {
+  overflow: hidden;
+}
+
+/* line 541, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  margin: 0 auto;
+}
+
+/* line 554, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+  -o-transition: -o-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+
+/* line 563, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* line 569, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 573, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+/* line 578, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-content {
+  position: relative;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+/* line 591, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: grey;
+}
+
+/* line 600, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+/* line 604, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+
+/* line 608, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-header {
+  min-height: 16.42857143px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 612, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+
+/* line 615, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+
+/* line 619, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-body {
+  position: relative;
+  padding: 15px;
+  color: white;
+}
+
+/* line 624, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* line 629, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+/* line 633, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+/* line 636, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+/* line 639, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+/* line 647, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.close {
+  margin-left: 90%;
+  margin-top: 0;
+}
+
+/* line 652, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+#comments {
+  text-align: left;
+  padding-left: 10%;
+}
+
+/* line 657, /Users/mitchashby16/3module/projects/instapic/app/assets/stylesheets/bootstrap.css.scss */
+.profile-pic-medium {
+  border-radius: 50%;
+}
