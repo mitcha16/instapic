@@ -16,6 +16,10 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'simplecov'
+SimpleCov.start do
+  add_filter 'config'
+end
 require 'omniauth'
 OmniAuth.config.test_mode = true
 omniauth_hash = { 'provider' => 'instagram',

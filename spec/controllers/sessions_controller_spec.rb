@@ -21,7 +21,7 @@ describe SessionsController do
 
     it "should redirect the user to the root url" do
       post :create, provider: :instagram
-      response.should redirect_to root_url
+      response.should redirect_to dashboard_path
     end
 
   end

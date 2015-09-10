@@ -43,25 +43,10 @@ a {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 8%;
+  padding-left: 8%;;
   margin-right: auto;
   margin-left: auto;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
 }
 
 .container-fluid {
@@ -463,4 +448,10 @@ footer {
 .col {
   padding: 5px;
   float: left;
+}
+
+#thumbnail {
+  display: inline;
+  list-style-type: none;
+  text-align: center;
 }

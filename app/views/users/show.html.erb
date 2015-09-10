@@ -1,19 +1,20 @@
-
 <header class="intro dashboard">
   <div class="intro-body">
     <p class="intro-text" id="welcome">Welcome back, <%= current_user.username %><br></p>
   </div>
 </header>
-
-<div class="pictures">
   <div class="container">
+<div class="pictures">
+
   <div class="row">
   <% current_client.user_recent_media.each do |item| %>
     <div class="col">
-      <%= image_tag item.images.thumbnail.url%>
-      <%= link_to "Like", " /like/#{item.id}" %><br>
-      <%= link_to "Un-Like", "/unlike/#{item.id}" %><br>
-      Likes: <%= item.likes[:count] %>
+      <ul id="thumbnail">
+      <li id="image"><%= image_tag item.images.low_resolution.url%></li>
+      <!-- <%#= link_to "Like", " /like/#{item.id}" %><br>
+      <%#= link_to "Un-Like", "/unlike/#{item.id}" %><br> -->
+      <li>Likes: <%= item.likes[:count] %></li>
+    </ul>
     </div>
   <% end %>
   </div>
