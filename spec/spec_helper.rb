@@ -17,8 +17,16 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'simplecov'
+require 'vcr'
+require 'webmock'
 SimpleCov.start do
   add_filter 'config'
+  add_filter 'application_controller'
+end
+require "instagram"
+Instagram.configure do |config|
+  config.client_id = ENV['instagram_id']
+  config.client_secret = ENV['instagram_secret_key']
 end
 require 'omniauth'
 OmniAuth.config.test_mode = true
