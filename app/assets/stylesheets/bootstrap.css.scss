@@ -474,7 +474,6 @@ footer {
   background-clip: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
-  opacity: .9;
   background: url("purple.jpg") no-repeat bottom center scroll;
   overflow: scroll;
   max-width: 70%;
@@ -489,6 +488,7 @@ footer {
 
 .modal .modal-content img {
   margin-bottom: 30px;
+  background-color: black;
 }
 
 .modal .modal-content .item-details {
@@ -656,4 +656,9 @@ footer {
 
 .profile-pic-medium {
   border-radius: 50%;
+}
+
+img {
+  background-color: black;
+  opacity: 1;
 }
