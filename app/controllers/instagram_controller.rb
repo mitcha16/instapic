@@ -1,6 +1,6 @@
 class InstagramController < ApplicationController
-  def like
-    current_client.like_media("#{params[:id]}")
-    redirect_to dashboard_path
+
+  def feed
+    @posts = current_client.user_media_feed({count: 100}).paginate(page: params[:page], per_page: 9)
   end
 end

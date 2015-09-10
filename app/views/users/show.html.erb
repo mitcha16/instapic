@@ -5,14 +5,11 @@
 </header>
   <div class="container">
 <div class="pictures">
-
   <div class="row">
   <% current_client.user_recent_media.each do |item| %>
     <div class="col">
       <ul id="thumbnail">
       <li id="image"><%= image_tag item.images.low_resolution.url%></li>
-      <!-- <%#= link_to "Like", " /like/#{item.id}" %><br>
-      <%#= link_to "Un-Like", "/unlike/#{item.id}" %><br> -->
       <li>Likes: <%= item.likes[:count] %></li>
     </ul>
     </div>
