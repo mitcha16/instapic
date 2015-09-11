@@ -3,16 +3,21 @@
     <p class="intro-text" id="welcome">Welcome back, <%= current_user.username %><br></p>
   </div>
 </header>
-<div class="container">
+<div class="container-feed">
   <div class="pictures">
     <div class="row">
       <% current_client.user_recent_media.each do |item| %>
+      <% if item.caption %>
       <div class="col">
         <ul id="thumbnail">
-          <li id="image"><%= image_tag item.images.low_resolution.url%></li>
-          <li>Likes: <%= item.likes[:count] %></li>
+          <button data-toggle="modal" data-target="#myModal-<%=item.id%>">
+            <li id="image"><%= image_tag item.images.low_resolution.url%></li>
+            <li>Likes: <%= item.likes[:count] %></li>
+          </button>
         </ul>
       </div>
+      <%= render partial: "partials/modal", locals: {item: item}%>
+      <% end %>
       <% end %>
     </div>
   </div>

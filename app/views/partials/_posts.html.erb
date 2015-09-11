@@ -1,0 +1,21 @@
+<% posts.each do |post| %>
+<% if post.caption %>
+<tr class="post">
+  <td><%= image_tag post.images.low_resolution.url%>></td>
+</tr>
+<% end %>
+<% end %>
+
+<!-- <% posts.each do |item| %>
+<% if item.caption %>
+<div class="col">
+<ul id="thumbnail">
+<button data-toggle="modal" data-target="#myModal-<%=item.id%>">
+<li id="image"><%= image_tag item.images.low_resolution.url%></li>
+<li>Likes: <%= item.likes[:count] %></li>
+</button>
+</ul>
+</div>
+<%= render partial: "partials/modal", locals: {item: item}%>
+<% end %>
+<% end %> -->
