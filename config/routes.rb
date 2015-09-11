@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/auth/instagram/callback', to: 'sessions#create'
   get '/dashboard', to: "users#show"
   get '/feed', to: "instagram#feed"
+  get '/search', to: "instagram#search"
 end
