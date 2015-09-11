@@ -3,17 +3,17 @@
     <p class="intro-text" id="welcome">Welcome back, <%= current_user.username %><br></p>
   </div>
 </header>
-  <div class="container">
-<div class="pictures">
-  <div class="row">
-  <% current_client.user_recent_media.each do |item| %>
-    <div class="col">
-      <ul id="thumbnail">
-      <li id="image"><%= image_tag item.images.low_resolution.url%></li>
-      <li>Likes: <%= item.likes[:count] %></li>
-    </ul>
+<div class="container">
+  <div class="pictures">
+    <div class="row">
+      <% current_client.user_recent_media.each do |item| %>
+      <div class="col">
+        <ul id="thumbnail">
+          <li id="image"><%= image_tag item.images.low_resolution.url%></li>
+          <li>Likes: <%= item.likes[:count] %></li>
+        </ul>
+      </div>
+      <% end %>
     </div>
-  <% end %>
   </div>
-</div>
 </div>
