@@ -12,4 +12,8 @@ class InstagramController < ApplicationController
       @posts = current_client.tag_recent_media(tags[0].name).paginate(page: params[:page], per_page: 9)
     end
   end
+
+  def trend
+    @posts = current_client.media_popular({count: 100}).paginate(page: params[:page], per_page: 9)
+  end
 end

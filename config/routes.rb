@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/dashboard', to: "users#show"
   get '/feed', to: "instagram#feed"
   get '/search', to: "instagram#search"
+  get '/trending', to: "instagram#trend"
 end
